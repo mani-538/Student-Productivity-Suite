@@ -1,4 +1,5 @@
 from tasks import *
+from attendance import *
 
 while True:
 
@@ -9,6 +10,9 @@ while True:
     print("3. Complete Task")
     print("4. Delete Task")
     print("5. Exit")
+    print("6. Add Attendance")
+    print("7. View Attendance")
+    print("8. Update Attendance")
 
     choice = input("Enter choice: ")
 
@@ -27,6 +31,15 @@ while True:
     elif choice == "5":
         print("Goodbye!")
         break
+
+    elif choice == "6":
+        add_attendance()
+
+    elif choice == "7":
+        view_attendance()
+
+    elif choice == "8":
+        update_attendance()
 
     else:
         print("Invalid choice")
